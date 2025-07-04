@@ -1,115 +1,160 @@
 <html>
-	<head>
-		<title>jharkhand</title>
-		<style>
-			#body{
-				margin:0;
-			}
-			#mainarea{
-				width:100%;
-				height:4600px;
-				background-color:#F6F8FB;
-				margin:0 auto;
-				
-			}
-			#toparea{
-				width:100%;
-				height:450px;
-				background-color:yellow;
-				
-				background-image: url("jhtop.jpg"); 
-   				background-size: 100% 100%;
-    				background-repeat: no-repeat;
-    				background-position:top center;
-				background-attachment:scroll;
 
-				display: flex;                /* Flexbox enable    (flexbox ban gaya)*/
-				align-items: flex-end;       /* Vertical bottom alignment */
-				justify-content: center;
-					
-			}
-			#toparea p{
-				color:white;
-				background-color: rgba(0, 0, 0, 0.5);
-				font-width:bold;
-				text-align:center;
-				width:100%;
-			}
-			#infoarea{
-				width:1000px;
-				height:200px;
-				background-color:white;
-				margin-top:20px;
-				margin:0 auto;	
-				
-			}
-			#infoarea h3{
-				color:black;
-				border-left:5px solid #FD0000;
-				padding:20px;
-				font-size:28px;
-				
-			}
-			.namearea{
-				width:1000px;
-				height:100px;
-				background-color:white;
-				margin:0 auto;
-				margin-top:10px;
-				padding-bottom:20px;
+<head>
+	<title>jharkhand</title>
+	<style>
+		#body {
+			margin: 0;
+		}
+
+		#mainarea {
+			width: 100%;
+			height: 3500px;
+			background-color: #F6F8FB;
+			margin: 0 auto;
+
+		}
+
+		#toparea {
+			width: 100%;
+			height: 450px;
+			background-color: yellow;
+
+			background-image: url("jhtop.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-attachment: scroll;
+
+			display: flex;
+			/* Flexbox enable    (flexbox ban gaya)*/
+			align-items: flex-end;
+			/* Vertical bottom alignment */
+			justify-content: center;
 
 
-				
-			}
-			.namearea p{
-				padding:10px;
-				border-left:solid 5px #FD0000;
-				padding-bottom:20px;
-			}
-			.box{
-				width:1000px;
-				height:500px;
-				background-color:green;
-				margin:0 auto;
+		}
 
-			}
-			.info{
-				width:1000px;
-				height:250px;
-				background-color:white;
-				margin:0 auto;
-				overflow:scroll;
+		#toparea p {
+			color: white;
+			background-color: rgba(0, 0, 0, 0.5);
+			font-width: bold;
+			text-align: center;
+			width: 100%;
+		}
 
-			}
-			.info pre{
-				margin:0 auto;
-				padding:10px;
-				font-family:Lato;
-				line-height:0.9;
-			}
+		#infoarea {
+			width: 1000px;
+			height: 200px;
+			background-color: white;
+			margin-top: 20px;
+			margin: 0 auto;
+			border-top-right-radius: 30px;
+
+		}
+
+		#infoarea h3 {
+			color: black;
+			border-left: 5px solid #FD0000;
+			padding: 20px;
+			font-size: 28px;
+
+		}
+
+		.namearea {
+			width: 1000px;
+			height: 100px;
+			position:relative;
+			background-color: white;
+			margin: 0 auto;
+			margin-top: 10px;
+			padding-bottom: 20px;
+			border-top-right-radius: 30px;
+		}
+		.wishlist {
+		  position:absolute;
+		  top:10px;
+		  right:20px;
+		  font-size: 22px;
+		  cursor: pointer;
+		  color: gray;
+		 
+		}
+		.namearea p {
+			padding: 10px;
+			border-left: solid 5px #FD0000;
 			
-		</style>
-	</head>
-	<body>
-		<div id="mainarea">
-			<div id="toparea">
-				<p><b style="font-size:62px;">25</b><b style="font-size:32px;">Unbelievable Places to Visit in Jharkhand</b></p>			
-			</div><br>
-			<div id="infoarea">
-				<h3>Tourist place in jharkhand</h3>
-				<p>Jharkhand, located in eastern India, is a land of natural beauty, ancient heritage, and rich tribal culture. Known as the "Land of Forests", it offers a perfect blend of scenic landscapes, waterfalls, temples, and wildlife, making it a unique destination for travelers. From nature lovers and adventure seekers to history enthusiasts, Jharkhand has something for everyone.</p>
-			
+		}
+		
+		
+		.box {
+			width: 1000px;
+			height: 500px;
+			background-color: white;
+			margin: 0 auto;
+			padding-top:2px;
+
+		}
+
+		.info {
+			width: 1000px;
+			height: 250px;
+			background-color: white;
+			margin: 0 auto;
+			overflow: scroll;
+
+		}
+
+		.info pre {
+			margin: 0 auto;
+			padding: 10px;
+			font-family: Lato;
+			line-height: 1;
+		}
+
+		.info pre a {
+			text-decoration: none;
+
+		}
+
+		.info pre a:hover {
+			text-decoration: underline;
+			color: #fd0000;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div id="mainarea">
+		<div id="toparea">
+			<p><b style="font-size:62px;">25</b><b style="font-size:32px;">Unbelievable Places to Visit in Jharkhand</b>
+			</p>
+		</div><br>
+		<div id="infoarea">
+			<h3>Tourist place in jharkhand</h3>
+			<p>Jharkhand, located in eastern India, is a land of natural beauty, ancient heritage, and rich tribal
+				culture. Known as the "Land of Forests", it offers a perfect blend of scenic landscapes, waterfalls,
+				temples, and wildlife, making it a unique destination for travelers. From nature lovers and adventure
+				seekers to history enthusiasts, Jharkhand has something for everyone.</p>
+
+		</div>
+		<div class="namearea">
+			<p><b style="font-size:88px; color:#fd0000;">01</b><b style="font-size:48px;""> 
+				&nbsp;Baidyanath Dham (Deoghar)</b></p>
+				<div class="wishlist">
+    			🖤
+			  	</div>
+
 			</div>
-			<div class="namearea">
-				<p><b  style="font-size:88px; color:#fd0000;">01</b><b style="font-size:48px;""> &nbsp;Baidyanath Dham (Deoghar)</b></p>
 				
-			</div>
-			<div class="box">
-				<img src="01.jpg" width="100%" height="100%"/>
-			
-			</div>
-			<div class="info">
-	<pre>
+				
+			<div class=" box">
+					<img src="01.jpg" width="100%" height="100%" />
+
+		</div>
+		<div class="info">
+			<pre>
 <h3>1️⃣<b> Spiritual Significance</b></h3>
 
 One of the 12 Jyotirlingas – extremely sacred for Hindus.
@@ -170,20 +215,27 @@ State: Jharkhand
 
 Nearby Airport: Deoghar Airport (Domestic)
 
-Nearest Railway Station: Baidyanathdham/Deoghar Railway Station</pre>
-			
-			</div>
-			<div class="namearea">
-					<p><b  style="font-size:88px; color:#fd0000;">02</b><b style="font-size:48px;"> &nbsp;Parasnath Hills</b></p>
-				
-			</div>
-			<div class="box">
-					<img src="02.jpg" width="100%" height="100%"/>
+Nearest Railway Station: Baidyanathdham/Deoghar Railway Station<br>
 
-			</div>
-			<div class="info">
-<pre>
-Parasnath Hills, also known as Shikharji, is the highest mountain range in Jharkhand, located in the Giridih district. It stands at a
+<b><a href="../../../H_location/india/jhmap.html">👉visit to see nearby Hotel!</a></b><br>
+<p><b>👇View Destination on Google Maps</b></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14523.598893618593!2d86.69511566322602!3d24.488931057370834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1162b1519c019%3A0xdb8ce9bf0b62d036!2sShree%20Baba%20Baidyanath%20Jyotirlinga%20Mandir%20Deoghar!5e0!3m2!1sen!2sin!4v1751609596696!5m2!1sen!2sin"
+ width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></pre>
+
+		</div>
+		<div class="namearea">
+			<p><b style="font-size:88px; color:#fd0000;">02</b><b style="font-size:48px;"> &nbsp;Parasnath Hills</b></p>
+			<div class="wishlist">
+    			🖤
+			  	</div>
+		</div>
+		<div class="box">
+			<img src="02.jpg" width="100%" height="100%" />
+
+		</div>
+		<div class="info">
+			<pre>
+Parasnath Hills, also known as Shikharji, is the highest mountain range in Jharkhand, located in the<b> Giridih district</b>. It stands at a
 height of approximately 1,365 meters (4,478 feet) above sea level and is one of the most sacred pilgrimage sites for the Jain community.
 It is believed that 20 out of 24 Jain Tirthankaras (spiritual leaders) attained moksha (liberation) on this hill, making it a spiritually powerful
 destination.
@@ -226,22 +278,28 @@ Nearest Airport: Ranchi or Gaya
 
 From the station, shared autos or taxis are available to Madhuban village.
 
+<b><a href="../../../H_location/india/jhmap.html">👉visit to see nearby Hotel!</a></b><br>
+<p><b>👇View Destination on Google Maps</b></p>
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29167.5254981175!2d86.11217811270389!3d23.96253744277821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f405ad10eeb6db%3A0x482722b2d4569f53!2sParasnath!5e0!3m2!1sen!2sin!4v1751612431580!5m2!1sen!2sin" 
+width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </pre>
-			
-			</div>
-			<div class="namearea">
-					<p><b   style="font-size:88px; color:#fd0000;">03</b><b style="font-size:48px;"> &nbsp;Rajrappa Temple</b></p>
 
-				
-			</div>
-			<div class="box">
-					<img src="03.jpg" width="100%" height="100%"/>
-			
-			</div>
-			<div class="info">
-<pre>
-Rajrappa Temple, located in Ramgarh district of Jharkhand, is one of the most mystical and powerful Shakti Peethas in India. 
+		</div>
+		<div class="namearea">
+			<p><b style="font-size:88px; color:#fd0000;">03</b><b style="font-size:48px;"> &nbsp;Rajrappa Temple</b></p>
+			<div class="wishlist">
+    			🖤
+			  	</div>
+
+		</div>
+		<div class="box">
+			<img src="03.jpg" width="100%" height="100%" />
+
+		</div>
+		<div class="info">
+			<pre>
+Rajrappa Temple, located in <b>Ramgarh district of Jharkhand</b>, is one of the most mystical and powerful Shakti Peethas in India. 
 It is dedicated to Goddess Chhinnamasta, an incarnation of Goddess Kali, who symbolizes self-sacrifice, courage, and divine energy. 
 This temple is not only a religious center but also a fascinating destination for history, culture, and nature lovers.
 
@@ -273,11 +331,24 @@ Local tribal and rural communities play a huge role in the temple’s cultural v
 
 A special Rajrappa Mela (fair) is organized annually which showcases traditional tribal culture, folk songs, and local cuisine.
 
+📍<b>How to Reach:</b>
+
+Nearest Town: Ramgarh (approximately 28 km away)
+
+Nearest Railway Station: Ramgarh Cantt Railway Station
+
+Nearest Airport: Birsa Munda Airport, Ranchi
+
+<b><a href="../../../H_location/india/jhmap.html">👉visit to see nearby Hotel!</a></b><br>
+<p><b>👇View Destination on Google Maps</b></p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.219842597147!2d85.7081243743054!3d23.632296693302113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f45c69f1555555%3A0x694639d2e6dd473e!2sRajrappa%20Mandir!5e0!3m2!1sen!2sin!4v1751612589045!5m2!1sen!2sin" 
+width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
 
 </pre>
-			
-			</div>
+
+			<!--</div>
 			<div class="namearea">
 				
 			</div>
@@ -286,9 +357,10 @@ A special Rajrappa Mela (fair) is organized annually which showcases traditional
 			</div>
 			<div class="info">
 			
-			</div>
-					
-			
+			</div> -->
+
+
 		</div>
-	</body>
+</body>
+
 </html>
