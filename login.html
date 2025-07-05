@@ -4,23 +4,34 @@
         <style> 
             #mainarea{
                 margin:0 auto;
-                height: 680px;;
-                width:1200px;
+                height: 100%;;
+                width:100%;
                 background-color:rebeccapurple;
-               
+                background-image:url('login3.jpg');
+                background-size:100% 100%;
+			    background-repeat:no-repeat;
+			    background-position:relative;
+			    background-attachment:scroll;
+                
             }
             .no_account,.an_account{
                 margin:0;
-                margin-top:0;
+                margin-top:10px;
                 margin-bottom:0;
-                height:auto;
-                width:auto;
-                 
+                height:40px;
+                width:200px;
+                display:flex;
+                justify-content: center;
+                align-items: center; 
                 float:right;
                 margin-right:20px;
-                border:solid 2px red;
+                
                 border-radius:30px;
 
+
+            }
+          .an_account:hover,.no_account:hover{
+                border:solid 1px #fd0000;
             }
             #loginarea{
                 margin:0 auto;
@@ -28,43 +39,64 @@
                 width:500px;
                 height:400px;
                 vertical-align:middle;
-                background-color:brown;
+                background-color:;
                 float:left;
                 margin-top:100px;
-                margin-left:300px;
+                margin-left:350px;
                 position:absolute;
+                
+                box-shadow:0px 0px 5px 1px rgb(14, 14, 14);
+                border-radius: 5px;
             }
             #loginarea .login{
                 width:100%;
                 height:50px;
-                background-color:blanchedalmond;
+                background-color:;
                 display: flex; 
                 justify-content: center;
                 align-items: center; 
+                color:white;
+                letter-spacing: 4px;
+
+
+                
+                
+                color: #FFFFFF;
+                
+                text-shadow: 2px 2px 0 #fd0000, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+                color: #FFFFFF;
+             
+                
+                
             }
             .username{
                 margin-top:20px;
                 width:150px;
                 height:40px;
-                background-color:blue;
+                background-color:;
                 display: flex; 
                 justify-content: left;
                 align-items: center; 
+                color:#FFFFFF;
+                
             }
             .usernamebox{
-                width:100%;
+                width:98%;
                 height:40px;
                 background-color:white;
                 display: flex; 
                 justify-content: left;
                 align-items: center; 
                 border-radius:3px;
+                padding-left:10px;
+                
+
             }
             .passwordarea{
                 margin-top:20px;
                 width:100%;
                 height:40px;
-                background-color:blue;
+                background-color:;
                 
                
               
@@ -72,39 +104,42 @@
             .password{
                 width:80px;
                 height:40px;
-                background-color:blue;
+                background-color:;
                 float:left;
                 display: flex; 
                 justify-content: left;
                 align-items: center; 
+                color: #FFFFFF;
               
             }
             .forget{
                 width:150px;
                 height:100%;
-                background-color:blue;
-                float:left;
-                margin-left:265px;
+                background-color:;
+                float:right;
+                margin-left:268px;
                
                 display: flex; 
                 justify-content: right;
                 align-items: center; 
+                color: #FFFFFF;
 
             }
             .passwordbox{
-                width:100%;
+                width:98%;
                 height:40px;
                 background-color:white;
                 display: flex; 
                 justify-content: left;
                 align-items: center; 
                 border-radius:3px;
+                padding-left:10px;
             }
             .loginbutton{
                 margin-top:20px;
                 width:100%;
                 height:40px;
-                background-color:pink;
+                background-color:;
                 display: flex;
                 justify-content: right;     /* Horizontal center */
                 align-items: center; 
@@ -112,18 +147,24 @@
             .button{
                 width:120px;
                 height:40px;
-                background-color:blue;
+                background-color:orange;
                 display: flex; 
                 justify-content: center;
                 align-items: center; 
                 border-radius:20px;
+                color: #FFFFFF;
+
                 
+            }
+            .button:hover{
+                color:#fd0000;
+                background-color:white;
             }
             .loginoption{
                 margin-top:20px;
                 width: 500px;
                 height: 40px;
-                background-color:grey;
+                background-color:;
             
                 
             }
@@ -131,7 +172,7 @@
             
                 width:200px;
                 height:40px;
-                background-color:blue;
+                background-color:black;
                 float:left;
                 margin-left:0px;
                 /* text-align:center; */
@@ -141,17 +182,21 @@
                 justify-content: center;
                 align-items: center; 
                 border-radius:20px;
+                opacity:0.5;
+                color:white;
 
             }
             .withfb{
                 width:200px;
                 height:40px;
-                background-color:blue;
+                background-color:black;
                 float:right;
                 display: flex; 
                 justify-content: center;
                 align-items: center; 
                 border-radius:20px;
+                opacity:0.5; 
+                color:white;
             }
         </style>
     </head>
@@ -160,7 +205,7 @@
 
             <div id="loginarea"> 
                 <div class="login"> 
-                    <h1>Login</h1>
+                    <h1><b>Login</b></h1>
 
                 </div>
                 <div class="username">
@@ -192,12 +237,12 @@
                 </div><br><br>
                 <div class="loginoption">
                     <div class="withgoogle">
-                        <h3>Login with <b>G+</b></h3>
+                        <h3><b>Login with <font color="orange" size="6px"> &nbsp;&nbsp;G+</font></b></h3>
                         
 
                     </div>
                     <div class="withfb">
-                         <h3>Login with <b>f</b></h3>
+                         <h3>Login with <b><font color="yellow" size="6px"> &nbsp;&nbsp;f</font></b></h3>
                         
 
                     </div>
