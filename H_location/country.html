@@ -11,6 +11,7 @@
 			margin:0 auto;
 			margin-top:;
 			border-top-right-radius:20px;
+			
 		}
 		#search{
 			height:40px;
@@ -19,8 +20,9 @@
 			margin:0 auto;
 			margin-top:px;
 			text-align:center;
-			border:solid 2px #fd0000;
+			border:solid 1px #fd0000;
 			border-radius:20px;
+			box-shadow:1px 1px 5px 0.5px rgb(163, 162, 162);
 		}
 		#boxarea{
 			height:1000px;
@@ -41,10 +43,13 @@
 			margin-left:100px;
 			position:relative;
 			border-top-right-radius:20px;
-			border-bottom-right-radius:20px;
+			border-bottom-left-radius:20px;
+			box-shadow:5px 5px 5px 0.5px rgb(163, 162, 162);
+			transition:transform 1s;
 		}
 		#boxarea .box:hover{
 			transform:scale(1.05);
+			box-shadow:5px 5px 5px 3px rgb(163, 162, 162);
 		}
 		#boxarea .box img{
 			height:200px;
@@ -59,7 +64,7 @@
 			float:left;
 			position:absolute; bottom:0;
 			border-left:solid 3px #fd0000;
-			border-bottom-right-radius:20px;
+			border-bottom-left-radius:20px;
 			text-align:center;
 		}
 		#boxarea .name h3{

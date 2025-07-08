@@ -15,11 +15,19 @@
 				display: flex;
  				align-items:center ;
   				justify-content: left;
-				padding-left:10px;
+				padding-left:40px;
 				font-size:18px;
-				border-radius:10px;
+				border-top-left-radius:20px;
+				border-bottom-right-radius:20px;
 				font-family:mv boli;
-			     }
+
+				box-shadow:1px 1px 3px 0.2px rgb(163, 162, 162);
+				transition:transform 1.8s;
+			    }
+			a{
+				text-decoration:none;
+				color:black;
+			}
 			
 				#name {
  				   position: fixed;
@@ -30,10 +38,20 @@
  				   padding: 10px;
  				   text-align: center;
   			  	   font-family: mv boli;
-  			           font-size: 24px;
+  			       font-size: 24px;
  			   	   z-index: 1000; /* taaki sabke upar rahe */
   			   	   border-bottom: 2px solid #FD0000;
 				}
+				.box:hover{
+					box-shadow:5px 5px 5px 0.5px rgb(163, 162, 162);
+					transform:scale(1.04,1.04);
+					border:ridge 2px #fd0000;
+					background-color:#fbfcfc;
+					border-top-left-radius:30px;
+					border-bottom-right-radius:30px;
+					
+				}
+				
 		</style>
 		</head>
 		<body>
@@ -46,7 +64,7 @@
 			<div class="box"><h3>Goa</h3></div>
 			<div class="box"><h3>Gujarat</h3></div>
 			<div class="box"><h3>Haryana</h3></div>
-			<div class="box"><a href="#.html"><h3>Himachal Pradesh</h3></div></a>
+			<a href="#.html"><div class="box"><h3>Himachal Pradesh</h3></div></a>
 			<a href="jhmap.html"><div class="box"><h3>Jharkhand</h3></div></a>
 			<div class="box"><h3>Karnataka</h3></div>
 			<div class="box"><h3>Kerala</h3></div>
